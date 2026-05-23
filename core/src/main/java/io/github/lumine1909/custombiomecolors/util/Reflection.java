@@ -31,7 +31,7 @@ public class Reflection {
     public static final Method<Void> method$Holder$bindTags = Method.of(class$Holder$Reference, "bindTags", void.class, Collection.class);
 
     // Optional value for higher version
-    public static final Field<Short> field$LevelChunkSection$fluidCount = Field.of(class$LevelChunkSection, "fluidCount", true);
+    public static final Field<Short> field$LevelChunkSection$fluidCount = Field.of(class$LevelChunkSection, "fluidCount", 1);
 
     public static Class<?> clazz(String name) {
         try {
