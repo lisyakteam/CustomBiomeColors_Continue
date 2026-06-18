@@ -45,7 +45,7 @@ public class PacketHandler_26_1 implements PacketHandler {
                 section.read(readBuf);
                 writeBuf.writeShort(field$LevelChunkSection$nonEmptyBlockCount.get(section));
                 writeBuf.writeShort(field$LevelChunkSection$fluidCount.get(section));
-                section.states.write(writeBuf, null, index);
+                section.getStates().write(writeBuf, null, index);
                 writeBiomes(writeBuf, section);
             }
         }
