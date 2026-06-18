@@ -59,8 +59,7 @@ public class PacketHandler_26_1 implements PacketHandler {
 
             buf.writeByte(storage.getBits());
             switch (palette) {
-                case SingleValuePalette<Holder<Biome>> single ->
-                    buf.writeVarInt(getModifiedId(field$SingleValuePalette$value.getUntyped(single)));
+                case SingleValuePalette<Holder<Biome>> single -> buf.writeVarInt(getModifiedId(field$SingleValuePalette$value.getUntyped(single)));
                 case LinearPalette<Holder<Biome>> linear -> {
                     Object[] array = field$LinearPalette$values.getUntyped(linear);
                     int size = linear.getSize();
